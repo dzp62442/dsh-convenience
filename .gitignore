@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+*.log
+.DS_Store
+# 本机部署与验证记录
+/VERIFICATION.txt

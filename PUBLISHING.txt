@@ -1,0 +1,28 @@
+插件市场发布准备（核对日期：2026-11-17）
+=====================================
+
+dsh-market/dsh-market 是市场客户端；收录目录在：
+https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+贡献规则：
+https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+
+1. 确定 GitHub 仓库、正式包名和许可证，公开实际可用的代码与使用说明。
+   本项目当前 private=true；准备好公开发行后再移除 private 并补 repository、license。
+   npm 名称是否可用须在发布当时检查，不要假定 dsh-convenience 尚未被占用。
+   GitHub 仓库需创建满一天，并添加 dsh-plugin topic。
+
+2. npm ci --ignore-scripts && npm test，然后 npm pack --dry-run 检查内容。
+   已提供 dsh.bundle、cordis.patch.yml、客户端预构建产物和文件白名单。
+   官方 Schemastery 是 peerDependency；当前仅声明已验证的 DSH 0.2.2-rc.3。
+   不要把私有 profile、Cookie、API 密钥、日志或本机备份放进仓库或发行包。
+
+3. 推荐发布 npm 包；也可用 npm pack 生成 .tgz，上传 GitHub Release。
+   如果使用 releases/latest/download 链接，资产名保持固定且不含版本号，
+   例如 dsh-convenience.tgz，避免下一次发版链接失效。
+
+4. 向 awesome-dsh-plugin 提交 PR，仅新增：
+   data/plugins/<GitHub用户名>__<仓库名>.yml
+   参考 marketplace/entry.example.yml，替换 OWNER/REPO。
+   当前功能建议归入 remote；不要把尚未实现的小工具写进功能描述。
+   描述需有英文，中文可一并提供。README 是目录项目自动生成的，不需手改。
+   维护者审核合并后，目录/市场索引会更新。

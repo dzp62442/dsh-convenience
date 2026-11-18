@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Convenience",
+    "description": "Manage automatic sign-in rules for trusted IPs, subnets and address ranges; other visitors use official DSH authentication."
+  }
+}

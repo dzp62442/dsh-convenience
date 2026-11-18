@@ -1,0 +1,9 @@
+# Replace OWNER and REPO with the actual public repository before submitting.
+url: https://github.com/OWNER/REPO
+name: OWNER/REPO
+category: remote
+description:
+  en: 'Configure automatic DSH web sign-in for trusted IPs, CIDR subnets and address ranges, with an editable settings page and official authentication for other visitors.'
+  zh: '在中文设置页管理可信 IP、CIDR 网段和地址范围的免登录规则，其他访问使用 DSH 官方鉴权。'
+# Optional when distributing a prebuilt GitHub Release archive:
+# tarball: https://github.com/OWNER/REPO/releases/latest/download/dsh-convenience.tgz
